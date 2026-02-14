@@ -7,6 +7,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Icons (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -29,75 +32,112 @@
   <main id="home" class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1 class="hero-title">My Portfolio</h1>
+        <p class="hero-kicker">
+          <span class="badge">
+            <i data-lucide="sparkles"></i>
+            Portfolio Assignment
+          </span>
+        </p>
+
+        <h1 class="hero-title">
+          Building clean, responsive <span class="accent">web experiences</span>
+        </h1>
+
         <p class="hero-subtitle">
-          Junior Software Engineering Student building responsive, clean web experiences.
+          Junior Software Engineering Student focused on HTML, CSS, JavaScript and modern UI structure.
         </p>
 
         <div class="hero-actions">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn btn-outline" href="#contact">Contact Me</a>
+          <a class="btn" href="#projects">
+            <i data-lucide="layout-grid"></i>
+            View Projects
+          </a>
+
+          <a class="btn btn-outline" href="#contact">
+            <i data-lucide="mail"></i>
+            Contact Me
+          </a>
         </div>
       </div>
 
-      <!-- Optional image area (we can add a real image later) -->
       <div class="hero-image" aria-hidden="true">
-        <div class="image-placeholder">Profile / Banner Image</div>
+        <div class="image-placeholder">
+          <i data-lucide="user"></i>
+          <p>Profile / Banner</p>
+        </div>
       </div>
     </div>
   </main>
 
-  <!-- ===== About (simple, clean) ===== -->
+  <!-- ===== About ===== -->
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <p class="section-subtitle">
-        A short intro that’s clear and professional.
+        A short professional introduction.
       </p>
 
       <p class="text">
-        I’m Mohammed Alshammasi, a junior Software Engineering student.
-        I enjoy building structured, responsive websites and improving my skills in frontend and backend development.
+        I’m Mohammed Alshammasi, a junior Software Engineering student. I enjoy building
+        structured, responsive websites and improving my skills in frontend and backend development.
       </p>
     </div>
   </section>
 
-  <!-- ===== Why Choose Me (like your first screenshot style) ===== -->
+  <!-- ===== Why Choose Me (like your design) ===== -->
   <section id="highlights" class="section">
     <div class="container">
       <h2 class="section-title">Why Choose Me</h2>
       <p class="section-subtitle">
-        I focus on building clean UI, responsive layouts, and organized code that’s easy to maintain.
+        I focus on clarity, responsiveness, and writing code that’s easy to maintain.
       </p>
 
       <div class="feature-list">
 
         <article class="feature-item">
-          <div class="feature-icon">+</div>
+          <div class="feature-icon">
+            <i data-lucide="smartphone"></i>
+          </div>
           <div class="feature-content">
-            <h3 class="feature-title">Clean & Responsive Layout</h3>
+            <h3 class="feature-title">Responsive Design</h3>
             <p class="feature-text">
-              I build layouts that work smoothly on mobile, tablet, and desktop using modern CSS.
+              Layouts that adapt smoothly across mobile, tablet, and desktop using Flexbox/Grid.
             </p>
           </div>
         </article>
 
         <article class="feature-item">
-          <div class="feature-icon">+</div>
+          <div class="feature-icon">
+            <i data-lucide="code-2"></i>
+          </div>
           <div class="feature-content">
-            <h3 class="feature-title">Strong Structure & Documentation</h3>
+            <h3 class="feature-title">Clean Structure</h3>
             <p class="feature-text">
-              Organized folders, clear commits, and readable docs to keep the project professional.
+              Organized folders, readable HTML, and clear styling conventions for maintainability.
             </p>
           </div>
         </article>
 
         <article class="feature-item">
-          <div class="feature-icon">+</div>
+          <div class="feature-icon">
+            <i data-lucide="rocket"></i>
+          </div>
           <div class="feature-content">
-            <h3 class="feature-title">Continuous Learning</h3>
+            <h3 class="feature-title">Continuous Improvement</h3>
             <p class="feature-text">
-              I actively improve by building projects and reviewing feedback to get better every week.
+              I learn by building projects, applying feedback, and improving the UI and workflow.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-item">
+          <div class="feature-icon">
+            <i data-lucide="file-text"></i>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Documentation Mindset</h3>
+            <p class="feature-text">
+              I document decisions and usage clearly to keep projects understandable and professional.
             </p>
           </div>
         </article>
@@ -106,50 +146,99 @@
     </div>
   </section>
 
-  <!-- ===== Projects (card format like your second screenshot) ===== -->
+  <!-- ===== Projects (card format) ===== -->
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <p class="section-subtitle">
-        A selection of projects I have built or worked on.
+        A selection of work built to strengthen my web development skills.
       </p>
 
       <div class="projects-grid">
 
-        <!-- Project Card 1 -->
+        <!-- Project 1 -->
         <article class="project-card">
           <div class="project-image">
-            <div class="image-placeholder">Project Image</div>
+            <div class="image-placeholder small">
+              <i data-lucide="monitor"></i>
+              <p>Project Image</p>
+            </div>
+
+            <a class="project-arrow" href="#" aria-label="Open project">
+              <i data-lucide="arrow-up-right"></i>
+            </a>
           </div>
 
           <div class="project-body">
             <p class="project-tag">Web</p>
             <h3 class="project-title">Responsive Product Landing Page</h3>
             <p class="project-desc">
-              A fully responsive landing page built using HTML, CSS, and JavaScript with modern UI and interactions.
+              A responsive landing page using HTML, CSS, and JavaScript with modern UI and interactions.
             </p>
 
             <div class="project-actions">
-              <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                <i data-lucide="github"></i>
+                View
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- Project Card 2 -->
+        <!-- Project 2 -->
         <article class="project-card">
           <div class="project-image">
-            <div class="image-placeholder">Project Image</div>
+            <div class="image-placeholder small">
+              <i data-lucide="printer"></i>
+              <p>Project Image</p>
+            </div>
+
+            <a class="project-arrow" href="#" aria-label="Open project">
+              <i data-lucide="arrow-up-right"></i>
+            </a>
           </div>
 
           <div class="project-body">
             <p class="project-tag">System</p>
             <h3 class="project-title">Printing Management System (Planning)</h3>
             <p class="project-desc">
-              A university-level system planning project focused on requirements, structure, and user/admin workflow.
+              Requirements and planning for a university printing management system to replace a licensed solution.
             </p>
 
             <div class="project-actions">
-              <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                <i data-lucide="external-link"></i>
+                View
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="image-placeholder small">
+              <i data-lucide="layout"></i>
+              <p>Project Image</p>
+            </div>
+
+            <a class="project-arrow" href="#" aria-label="Open project">
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="project-body">
+            <p class="project-tag">UI</p>
+            <h3 class="project-title">UI Components Practice</h3>
+            <p class="project-desc">
+              A mini project focused on layout structure, card components, and responsive patterns.
+            </p>
+
+            <div class="project-actions">
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                <i data-lucide="external-link"></i>
+                View
+              </a>
             </div>
           </div>
         </article>
@@ -163,7 +252,7 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <p class="section-subtitle">
-        Send me a message — no backend required for this assignment.
+        Send a message (no backend required).
       </p>
 
       <form class="contact-form">
@@ -182,18 +271,26 @@
           <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
         </div>
 
-        <button class="btn" type="submit">Send Message</button>
+        <button class="btn" type="submit">
+          <i data-lucide="send"></i>
+          Send Message
+        </button>
       </form>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Mohammed Alshammasi — Portfolio Assignment 1</p>
+      <p>© 2026 Mohammed Alshammasi — Assignment 1</p>
     </div>
   </footer>
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
+
+  <!-- Activate Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
