@@ -501,3 +501,11 @@ button.btn{
   color: var(--muted);
   font-weight: 700;
 }
+.profile-img{
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+}
