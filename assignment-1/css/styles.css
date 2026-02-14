@@ -488,3 +488,16 @@ button.btn{
     grid-template-columns: 1fr;
   }
 }
+
+/* Small UI text */
+.greeting{
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.form-status{
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
