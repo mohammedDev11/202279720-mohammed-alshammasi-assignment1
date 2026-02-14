@@ -10,9 +10,9 @@
   const hour = new Date().getHours();
 
   let message = "Welcome!";
-  if (hour >= 5 && hour < 12) message = "Good morning ☀️";
-  else if (hour >= 12 && hour < 17) message = "Good afternoon 🌤️";
-  else if (hour >= 17 && hour < 22) message = "Good evening 🌙";
+  if (hour >= 5 && hour < 12) message = "Good morning";
+  else if (hour >= 12 && hour < 17) message = "Good afternoon";
+  else if (hour >= 17 && hour < 22) message = "Good evening";
   else message = "Hope you’re having a calm night 🌌";
 
   greetingEl.textContent = message;
@@ -30,7 +30,7 @@
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    status.textContent = "✅ Message ready! (No backend in this assignment, so this is a demo interaction.)";
+    status.textContent = "Message ready! (No backend in this assignment, so this is a demo interaction.)";
 
     // Optional: clear inputs after a short delay
     setTimeout(() => {
