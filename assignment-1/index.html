@@ -1,20 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Mohammed Alshammasi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-    <h1>My Portfolio</h1>
-    <p>Welcome to my personal portfolio website.</p>
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#home">Mohammed</a>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#highlights">Why Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- ===== Hero ===== -->
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-title">My Portfolio</h1>
+        <p class="hero-subtitle">
+          Junior Software Engineering Student building responsive, clean web experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Optional image area (we can add a real image later) -->
+      <div class="hero-image" aria-hidden="true">
+        <div class="image-placeholder">Profile / Banner Image</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== About (simple, clean) ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        A short intro that’s clear and professional.
+      </p>
+
+      <p class="text">
+        I’m Mohammed Alshammasi, a junior Software Engineering student.
+        I enjoy building structured, responsive websites and improving my skills in frontend and backend development.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Why Choose Me (like your first screenshot style) ===== -->
+  <section id="highlights" class="section">
+    <div class="container">
+      <h2 class="section-title">Why Choose Me</h2>
+      <p class="section-subtitle">
+        I focus on building clean UI, responsive layouts, and organized code that’s easy to maintain.
+      </p>
+
+      <div class="feature-list">
+
+        <article class="feature-item">
+          <div class="feature-icon">+</div>
+          <div class="feature-content">
+            <h3 class="feature-title">Clean & Responsive Layout</h3>
+            <p class="feature-text">
+              I build layouts that work smoothly on mobile, tablet, and desktop using modern CSS.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-item">
+          <div class="feature-icon">+</div>
+          <div class="feature-content">
+            <h3 class="feature-title">Strong Structure & Documentation</h3>
+            <p class="feature-text">
+              Organized folders, clear commits, and readable docs to keep the project professional.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-item">
+          <div class="feature-icon">+</div>
+          <div class="feature-content">
+            <h3 class="feature-title">Continuous Learning</h3>
+            <p class="feature-text">
+              I actively improve by building projects and reviewing feedback to get better every week.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects (card format like your second screenshot) ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">
+        A selection of projects I have built or worked on.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="image-placeholder">Project Image</div>
+          </div>
+
+          <div class="project-body">
+            <p class="project-tag">Web</p>
+            <h3 class="project-title">Responsive Product Landing Page</h3>
+            <p class="project-desc">
+              A fully responsive landing page built using HTML, CSS, and JavaScript with modern UI and interactions.
+            </p>
+
+            <div class="project-actions">
+              <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="image-placeholder">Project Image</div>
+          </div>
+
+          <div class="project-body">
+            <p class="project-tag">System</p>
+            <h3 class="project-title">Printing Management System (Planning)</h3>
+            <p class="project-desc">
+              A university-level system planning project focused on requirements, structure, and user/admin workflow.
+            </p>
+
+            <div class="project-actions">
+              <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">
+        Send me a message — no backend required for this assignment.
+      </p>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Mohammed Alshammasi — Portfolio Assignment 1</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 </html>
